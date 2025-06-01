@@ -16,7 +16,7 @@ const Login = () => {
  const handleSubmit=async(e)=>{
    e.preventDefault()
    console.log("login data is :",Login);
-   const result = await axios.post("http://localhost:3004/auth/login", Login);
+   const result = await axios.post("https://farmease-dxu4.onrender.com/auth/login", Login);
             
    console.log("Server Response:", result.data);
 
