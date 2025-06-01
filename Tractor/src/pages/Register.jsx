@@ -22,7 +22,7 @@ const Register = () => {
             // this console.log is working and...
             console.log(`the register data:`,register)
             
-     const result = await axios.post("http://localhost:3004/auth/register", register);
+     const result = await axios.post("https://farmease-dxu4.onrender.com/auth/register", register);
             
         console.log("Server Response:", result.data);
 
