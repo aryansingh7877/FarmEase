@@ -58,7 +58,7 @@ function ViewTools() {
     useEffect(() => {
         const fetchTools = async () => {
             try {
-                const response = await axios.get("http://localhost:3004/api/tools");
+                const response = await axios.get("https://farmease-dxu4.onrender.com/api/tools");
                 setTools(response.data); 
             } catch (error) {
                 console.error("❌ Failed to fetch tools:", error);
