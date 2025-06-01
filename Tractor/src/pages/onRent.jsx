@@ -29,7 +29,7 @@ function Onrent() {
         data.append("image", formData.image);
 
         try {
-            const response = await axios.post("http://localhost:3004/api/upload", data, {
+            const response = await axios.post("https://farmease-dxu4.onrender.com/api/upload", data, {
                 headers: { "Content-Type": "multipart/form-data" },
             });
 
